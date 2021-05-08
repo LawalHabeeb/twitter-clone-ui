@@ -1,0 +1,150 @@
+:root{
+	--clr-background-1: #10171e;
+	--clr-background-2: #1c2938;
+	--clr-twitter: #1DA1F2;
+	--clr-log-bdr: #b8b8b8;
+	--clr-links: #ffffff;
+	--clr-link:var(--clr-links)
+}
+
+body{ 
+	background-color: var(--clr-background-1);
+	color: var(--clr-links);
+}
+
+#con{
+	background-color: var(--clr-background-2); 
+	margin-top: 20px; 
+	padding-bottom: 10px;
+}
+
+.navbar{
+	background-color: var(--clr-background-2);
+}
+
+li{
+	text-decoration: none;
+	display: inline;
+}
+
+li #lang{
+	float: right;
+
+}
+
+#a{
+	color: var(--clr-links);
+	text-decoration: none;
+	padding: 0px 5px;
+}
+
+#a:hover{
+	color: var(--clr-links);
+	text-decoration: none;
+}
+
+#form-1{
+	width: 300px;
+	background-color: var(--clr-background-2);
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding-left: 6px;
+	height: 35px;
+}
+
+.fab{
+	color: #1DA1F2;
+}
+
+#butt{
+	width: 300px;
+	background-color: var(--clr-background-1);
+	color: #1DA1F2; 
+	border-radius: 5px;
+	border: 0.5px solid var(--clr-log-bdr);
+	height: 40px;
+	font-weight: bold;
+}
+
+#butt:hover{
+	background-color: var(--clr-link);
+	color: var(--clr-twitter);
+}
+
+#cont-1{
+	padding-left: 70px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+/* ======================
+      Toggle Switch
+   ======================
+*/
+
+#switch-mode{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch{
+	width: 50px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: #999999;
+	position: absolute;
+	cursor: pointer;
+}
+
+.switch-toggle{
+	width: 16px;
+	height: 16px;
+	border-radius: 15px;
+	position: absolute;
+	top: 0.1em;
+	left: 0.2em;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 250ms ease-in-out;
+}
+
+.switch::before{
+	content: "Dark mode";
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	left: 60px;
+}
+
+#switch-mode:checked ~ label .switch-toggle{
+	transform: translateX(28px);
+}
+
+#switch-mode:checked + .switch{
+	background-color: #1DA1F2;
+}
+
+/* ========================
+      Toggle Switch End
+	=======================
+*/
+
+/* ======================
+        Dark Mode
+	=====================
+*/
+
+.dark-mode{
+	--clr-background-1: #ffffff;
+	--clr-background-2: #dfdddd;
+	--clr-twitter: #ffffff;
+	--clr-log-bdr: #1DA1F2;
+	--clr-links: grey;
+	--clr-link: #1DA1F2;
+}
+
+/* ======================
+        Dark Mode End
+	=====================
+*/

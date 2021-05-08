@@ -1,0 +1,254 @@
+:root{
+	--clr-background-1: #10171e;
+	--clr-background-2: #1c2938;
+	--clr-twitter: #1DA1F2;
+	--clr-log-bdr: grey;
+	--clr-links: #ffffff;
+	--clr-link:var(--clr-links);
+	--clr-btn-link:#ffffff;
+}
+
+body{
+	margin: 0;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+#div-1{
+	background-color: var(--clr-background-1);
+	color: white;
+	position: relative;
+	height: 100vh;
+}
+
+.child{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.fa{
+	font-size: 30px;
+}
+
+#fa{
+	display: inline-block;
+	bottom: 0.5em;
+	font-size: 15px;
+	font-stretch: expanded;
+	font-weight: bolder;
+}
+
+#div-2{
+	background-color: var(--clr-background-2);
+	color: var(--clr-link);
+	position: relative;
+	height: 100vh;
+}
+
+#childs{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+}
+
+.form-div{
+	display: inline block;
+}
+#pass-label{
+	position: absolute;
+	top: 40px;
+	color: #444444;
+}
+
+.user-info{
+	background-color: var(--clr-background-2);
+	border: 1px solid grey;
+	width: 175px;
+	height: 40px;
+	border-radius: 6px; 
+	padding-left: 6px;
+}
+
+
+#log{
+	background-color: var(--clr-background-2);
+	border: 1px solid var(--clr-log-bdr);
+	width: 75px;
+	height: 40px;
+	right: 160px;
+	border-radius: 20px; 
+	color: #1DA1F2;
+}
+
+.child-2{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 20%
+}
+
+#btn-1{
+	width: 400px;
+	height: 30px;
+	border-radius: 20px;
+	border: 1px solid var(--clr-log-bdr);
+	background-color: var(--clr-twitter);
+	color: white;
+}
+
+#btn-1:hover{
+	background-color: #ffffff;
+	color: var(--clr-twitter);
+}
+
+#btn-2{
+	width: 400px;
+	height: 30px;
+	border-radius: 20px;
+	border: 1px solid var(--clr-log-bdr);
+	background-color: var(--clr-background-2);
+	color: var(--clr-twitter);
+}
+
+#btn-2:hover{
+	background-color: var(--clr-btn-link);
+}
+
+.footer{ 
+	background-color: var(--clr-background-2);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40px;
+	color: white;
+	justify-content: center;
+	border-top: 0.1rem solid #444444;
+}
+
+
+ul{
+	list-style: none;
+}
+
+li{
+	display: inline;
+	margin: 20px;
+	font-weight: normal;
+}
+
+a{
+	color: var(--clr-links);
+	text-decoration: none;
+}
+
+a:hover{
+	color: var(--clr-links);
+	text-decoration: none;
+}
+
+.user-info{
+	margin-right: 10px;
+}
+ #divs{
+ 	align-items: center;
+ 	justify-content: center;
+ }
+
+/* ======================
+      Toggle Switch
+   ======================
+*/
+
+#switch-mode{
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.switch{
+	width: 50px;
+	height: 20px;
+	border-radius: 15px;
+	background-color: grey;
+	position: absolute;
+	cursor: pointer;
+}
+
+.switch-toggle{
+	width: 16px;
+	height: 16px;
+	border-radius: 15px;
+	position: absolute;
+	top: 0.15em;
+	left: 0.2em;
+	background-color: white;
+	cursor: pointer;
+	transition: all 250ms ease-in-out;
+}
+
+.switch::before{
+	content: "Dark mode";
+	position: absolute;
+	display: inline-block;
+	width: 100px;
+	left: 60px;
+	font-family: sans-serif;
+	font-style: bold;
+}
+
+#switch-mode:checked ~ label .switch-toggle{
+	transform: translateX(28px);
+} 
+
+#switch-mode:checked + .switch{
+	background-color: #1DA1F2;
+}
+
+/* ========================
+      Toggle Switch End
+	=======================
+*/
+
+/* ======================
+        Dark Mode
+	=====================
+*/
+
+.dark-mode{
+	--clr-background-1: #1DA1F2;
+	--clr-background-2: #ffffff;
+	--clr-twitter: #1DA1F2;
+	--clr-log-bdr: #1DA1F2;
+	--clr-links: grey;
+	--clr-link: #000;
+	--clr-btn-link:#bde6ff;
+}
+
+/* ======================
+        Dark Mode End
+	=====================
+*/
+
+/* ======================
+       Responsiveness
+	=====================
+*/
+
+@media only screen and (max-width:550px){
+	#div-1, #childs, .child-2 .fa, .child-2 h2, .child-2 h3{
+		display: none;
+	}
+
+	#div-2{
+		width: 100vw;
+		height: 100vh;
+		background-color: #ffffff;
+	}
+
+	.footer{
+		height: 80px;
+	}
+}

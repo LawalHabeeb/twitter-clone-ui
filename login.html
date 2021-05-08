@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Twitter Clone User Interface - Login </title>
+	<link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="https://kit.fontawesome.com/a222f6d491.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="cont">
+		<nav class="navbar">
+			<ul style="padding: 0px 130px;">
+				<li><a href="index.html" id="a"><i class="fab fa-twitter"></i> Home </a></li>
+				<li><a href="#" id="a"> About </a></li>
+				<li><a href="#" id="a"> Feeds </a></li>
+				<li><a id="lang"> Language: English </a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="container" id="con">
+		<form style="padding-left: 70px; padding-top: 40px;">
+			<h3> Log in to twitter </h3>
+			<input type="text" name="user-info" placeholder="Phone, Email or Username" minlength="6" id="form-1"><br>
+			<label style="font-size: 0.8em;">forgot password?</label><br>
+			<input type="password" name="password" placeholder="password" minlength="8" id="form-1"><br>
+				<input type="checkbox" id="check">
+				<label for="check">Remember me</label>
+			 <br>
+			<button type="button" id="butt"> Login </button>
+		</form>
+	</div>
+	<div class="container" id="cont-1" style="padding-left: 70px; padding-top: 40px;">
+		<label>New to twitter? <a href="#"> Sign up now </a></label><br>
+		<label>Aready using twitter via text message? <a href="#"> Activate your account now </a></label><br>
+		<div class="dark-mode-switch">
+			<input type="checkbox" id="switch-mode" checked />
+			<label for="switch-mode" class="switch">
+				<div class="switch-toggle">
+
+				</div>
+			</label>
+		</div>
+
+	</div>
+	<script src="login.js"></script>
+</body>
+</html>

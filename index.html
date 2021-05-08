@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+	<meta http-equiv="X-UA-compatible" content="IE=edge,Chrome=1">
+	<meta name="HandheldFriendly" content="true">
+	<title> Twitter Clone User Interface </title>
+	<link rel="stylesheet" type="text/css" href="vendor/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script src="https://kit.fontawesome.com/a222f6d491.js" crossorigin="anonymous"></script>
+	
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- left side -->
+			<div class="col-sm-6" id="div-1">
+				<div class="child">
+					<i class="fa fa-search" id="tag-1"> <label for="tag-1" id="fa">Find your Interest </label></i>	<br><br>		
+					<i class="fa fa-user-friends" id="tag-2"> <label for="tag-2" id="fa">Explore what people are saying </label></i>	<br><br>
+					<i class="fa fa-comments" id="tag-3"> <label for="tag-3" id="fa">Join the people </label></i>   <br><br>
+					<div class="dark-mode-switch">
+						<input type="checkbox" id="switch-mode" checked />  
+						<label for="switch-mode" class="switch">
+							<div class="switch-toggle">
+								
+							</div>
+						</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- Right side -->
+			<div class="col-sm-6" id="div-2">
+				<!-- Login side -->
+				<form id="childs">
+					<div class="form-div">
+						<input type="text" name="user-info" placeholder="Phone, Email or Username" minlength="6" class="user-info">
+						<label id="pass-label"> forgot password? </label>
+					</div>
+					<input type="password" name="password" placeholder="Password" minlength="8" class="user-info" id="pass">
+					<button type="button" id="log"> Login </button>
+				</form>
+				<!-- end of login -->
+				<div class="child-2">
+					<i class="fa fa-twitter" style="color: #1DA1F2;"></i><br><br>
+					<h2> Explore what's happening in the world. </h2><br><br>
+					<h3> Join us today </h3><br><br>
+					<button type="button" class="Login-button" id="btn-1"> Sign Up </button><br><br>
+					<button type="button" class="Login-button" id="btn-2"> Sign In </button>
+				</div>
+			</div>
+		</div>
+		<!-- footer -->
+		<footer class="footer" id="footer">
+			<ul>
+				<li> <a href="#">About</a></li>
+				<li> <a href="#">Blog</a></li>
+				<li> <a href="login.html">Login</a></li>
+				<li> <a href="#">Terms</a></li>				
+				<li> <a href="#">Apps</a></li>
+				<li> <a href="#">Settings</a></li>
+				<li> <a href="feeds.html">Feeds</a></li>
+				<li> <a href="#">Status</a></li>
+				<li> <a href="#">Privacy</a></li>
+				<li> <a href="#">Brand</a></li>
+				<li> <a href="#">Developer</a></li>
+				<li> <a href="#"> &copy; 2021 Lil~Spicy </a></li>
+			</ul>
+		</footer>
+	</div>
+	<script type="text/javascript" src="./login.js"></script>
+</body>
+</html>
