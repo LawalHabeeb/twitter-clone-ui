@@ -2,6 +2,7 @@
 	--clr-background-1: #10171e;
 	--clr-background-2: #1c2938;
 	--clr-twitter: #1DA1F2;
+	--clr-background: #10171e;
 	--clr-log-bdr: #b8b8b8;
 	--clr-links: #ffffff;
 	--clr-link:var(--clr-links)
@@ -58,7 +59,7 @@ li #lang{
 
 #butt{
 	width: 300px;
-	background-color: var(--clr-background-1);
+	background-color: var(--clr-background);
 	color: #1DA1F2; 
 	border-radius: 5px;
 	border: 0.5px solid var(--clr-log-bdr);
@@ -136,8 +137,9 @@ li #lang{
 */
 
 .dark-mode{
-	--clr-background-1: #ffffff;
-	--clr-background-2: #dfdddd;
+	--clr-background-2: #ffffff;
+	--clr-background-1: #dfdddd;
+	--clr-background: #ffffff;
 	--clr-twitter: #ffffff;
 	--clr-log-bdr: #1DA1F2;
 	--clr-links: grey;
