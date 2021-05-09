@@ -1,0 +1,24 @@
+:root{
+    --clr-background-1: #10171e;
+    --clr-background-2: #1c2938;
+	--clr-twitter: #1DA1F2;
+    
+}
+
+.navbar{
+    background: var(--clr-background-1);
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display: inline;
+}
+
+li .fa{
+    font-size: 30px;
+    margin-right: 50px;
+    color: var(--clr-twitter);
+}
